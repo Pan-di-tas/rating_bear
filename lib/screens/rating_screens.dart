@@ -43,7 +43,7 @@ class _RatingScreenState extends State<RatingScreen> {
     }
 
     // 🔁 Reinicia la animación a su estado neutral después de un corto tiempo
-    _resetTimer = Timer(const Duration(milliseconds: 1400), () {
+    _resetTimer = Timer(const Duration(milliseconds: 1000), () {
       if (_artboard != null) {
         final machineName = "Login Machine";
         final newController = StateMachineController.fromArtboard(_artboard!, machineName);
